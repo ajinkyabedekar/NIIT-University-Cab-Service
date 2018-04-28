@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "822575985659",
+    "firebase_url": "https://nucs-dfcc9.firebaseio.com",
+    "project_id": "nucs-dfcc9",
+    "storage_bucket": "nucs-dfcc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822575985659:android:c1962aa38ff5ecbf",
+        "android_client_info": {
+          "package_name": "niituniversity.nucs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822575985659-clm4iopbjhnj9brkhhud9etb9pns0rp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "niituniversity.nucs",
+            "certificate_hash": "8f85ab6ecf78df3b447f038b96eb1f976bb9b937"
+          }
+        },
+        {
+          "client_id": "822575985659-tvr5nhtvue9armrr8bim7uql83tccp9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYRmqDskpJZS7s-c87xkFc5qpMdemjN3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822575985659-tvr5nhtvue9armrr8bim7uql83tccp9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
