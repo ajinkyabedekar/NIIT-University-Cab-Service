@@ -26,4 +26,5 @@
     <string name="i_m_a_customer">I\'m a Customer</string>
     <string name="time">time</string>
     <string name="rideid">rideId</string>
+    <string name="email">Email</string>
 </resources>

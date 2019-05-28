@@ -262,9 +262,6 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
             String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
             DatabaseReference driverRef = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(userId).child("customerRequest");
             driverRef.removeValue();
-            DatabaseReference ref = FirebaseDatabase.getInstance().getReference("customerRequest");
-            GeoFire geoFire = new GeoFire(ref);
-            geoFire.removeLocation(customerId);
             customerId = "";
             rideDistance = 0;
             if (pickupMarker != null) {
@@ -372,12 +369,6 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
     }
     private void disconnectDriver(){
         LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-            String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-            DatabaseReference ref = FirebaseDatabase.getInstance().getReference("driversAvailable");
-            GeoFire geoFire = new GeoFire(ref);
-            geoFire.removeLocation(userId);
-        }
     }
     final int LOCATION_REQUEST_CODE = 1;
     @Override
