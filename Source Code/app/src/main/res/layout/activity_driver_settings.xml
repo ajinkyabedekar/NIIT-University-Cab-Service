@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,29 +11,38 @@
         android:layout_height="100sp"
         android:id="@+id/profileImage"
         android:src="@mipmap/ic_default_user"
-        android:layout_marginBottom="20sp"/>
+        android:layout_marginBottom="20sp"
+        android:contentDescription="@string/image" />
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:hint="Name"
-        android:layout_marginBottom="20sp"/>
+        android:hint="@string/name"
+        android:layout_marginBottom="20sp"
+        android:importantForAutofill="no"
+        tools:targetApi="o"
+        android:inputType="textPersonName" />
     <EditText
         android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:hint="Phone"
+        android:hint="@string/phone"
         android:layout_marginBottom="20sp"
-        android:inputType="number"/>
+        android:inputType="phone|number"
+        android:importantForAutofill="no"
+        tools:targetApi="o" />
     <EditText
         android:id="@+id/car"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:hint="Car"
-        android:layout_marginBottom="20sp"/>
+        android:hint="@string/car"
+        android:layout_marginBottom="20sp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:targetApi="o" />
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,27 +51,22 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 Seater"
+            android:text="@string/_4_seater"
             android:id="@+id/seat4"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6 Seater"
+            android:text="@string/_6_seater"
             android:id="@+id/seat6"/>
-
     </RadioGroup>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/confirm"
-        android:text="confirm"/>
+        android:text="@string/confirm"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/back"
-        android:text="back"/>
-
+        android:text="@string/back"/>
 </LinearLayout>
-
-

@@ -31,5 +31,6 @@
         <activity android:name=".DriverSettingsActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".HistorySingleActivity" />
+        <service android:name=".onAppKilled" />
     </application>
 </manifest>
