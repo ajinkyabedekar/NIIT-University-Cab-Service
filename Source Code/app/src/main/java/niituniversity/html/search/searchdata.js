@@ -1,3 +1,12 @@
-var indexSectionsWithContent = {};
-var indexSectionNames = {};
-var indexSectionLabels = {};
+var indexSectionsWithContent =
+{
+};
+
+var indexSectionNames =
+{
+};
+
+var indexSectionLabels =
+{
+};
+
